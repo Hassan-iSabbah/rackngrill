@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- extra -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons  -->
+    <link rel="icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <title>Rack n Grill</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+        #btnNavbarToggler {
+            position: fixed;
+            top: 2vh;
+            right: 5vw;
+        }
+
+        body {
+            font-family: "Heading";
+            position: relative;
+            background: url("./img/steak.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 4vh;
+        }
+
+        #welcomeToJamRock {
+            font-size: 3.5rem;
+        }
+
+        #hero {
+            position: relative;
+            height: 100%;
+            width: 100vw;
+        }
+
+        #hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url("./img/steak.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        #callToAction {
+            position: relative;
+            height: 100%;
+            width: 100vw;
+        }
+
+        #callToAction::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url("./img/truck.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        #product img {
+            position: relative;
+        }
+
+        #product img::before {
+            content: "hello";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        #navbar img {
+            border-radius: 50%;
+        }
+
+        .video {
+            max-width: 30vw;
+            max-height: 70vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg py-3 fixed-top hide">
+        <div class="container">
+            <div>
+                <a href="#" class="navbar-brand out-text"><img src="img/darklogo.jpeg" class="img-fluid w-25"
+                        alt=""></a>
+            </div>
+            <button id="btnNavbarToggler" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="home.php" class="nav-link out-text">Home</a></li>
+                    <span>Coming soon</span>
+                    <!-- 
+                    <li class="nav-item"><a href="blog.php" class="nav-link out-text">Blog</a></li>
+                    <li class="nav-item"><a href="home.php#aboutUs" class="nav-link out-text">About us</a></li>
+                    <li class="nav-item"><a href="assistance.php" class="nav-link out-text">Assistance</a></li>
+                    <li class="nav-item"><a href="account.php" class="nav-link out-text">Account</a></li>
+                    <li class="nav-item"><a href="headquarters.php" class="nav-link out-text">Headquarters</a></li>
+                    <li class="nav-item"><a href="logout.php" class="nav-link out-text">LOGOUT</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+    </script>
+    <!-- HERO -->
+    <div class="container-fluid p-5" id="hero">
+        <div class="row py-5 my-5">
+            <div id="welcomeToJamRock" class="col-md-6 hide welcomeToJamRock">
+                <h1>Welcome to Rack n Grill! </h1>
+                <img src="img/ramadankareem.jpg" class="img-fluid" alt="">
+
+            </div>
+            <div class="col-md-6">
+                <h6>Rack n Grill</h6>
+                <p class="lead text-center"> Mitchell's Plain, we're here for you. In house delivery hooking you up with
+                    lekkerness straight to your door this Friday. Drop us a WhatsApp with your order, name and
+                    address...once we have these details, we'll confirm your order. Delivery takes place between 18h00
+                    and 19h00.</p><br><br>
+                <h6>Our team of experts</h6>
+                <p> is dedicated to ensuring your needs are met with the highest level
+                    of professionalism and efficiency</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- copy -->
+    <div class="container-fluid bg-white p-5 align-items-center justify-content-center text-center" id="copy">
+        <div class="row py-2 my-4">
+            <h1 class="display-1">Our menu</h1>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+                <h2 class="display-3">Burgers</h2>
+            </div>
+            <div class="col-md-4 align-items-center justify-content-center">
+                <h2 class="display-3">Delicious Ribs</h2>
+            </div>
+            <div class="col-md-4">
+                <h2 class="display-3">Best Sellers</h2>
+            </div>
+
+        </div>
+        <div class="row py-5 my-5 align-items-center justify-content-center">
+            <div class="col-md-4">
+                <img src="img/burger.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-4 align-items-center justify-content-center">
+                <video controls loop class="video" src="vid/ribs.mp4"></video>
+            </div>
+            <div class="col-md-4">
+                <img src="img/latestmenu.jpg" alt="" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-primary p-5 text-black justify-content-center">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="neon-text">Food Truck • Dark Kitchen</span><br>
+                <span class="out-text">Entrepreneur</span><br>
+                <span class="neon-text">Est 2015</span><br>
+                <span class="out-text">Info@rackngrill.co.za</span><br>
+                <span class="neon-text">•Ribs •Burgers •Boeries•Pizza</span><br>
+                <span class="out-text">0739182527 - Phone or WhatsApp orders</span><br>
+                <span class="neon-text">0682292749 - Functions, Parties, Weddings</span><br>
+                <span class="out-text">Cape Town</span><br>
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-1">Contact us now!</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="toast" class="top right success"></div>
+    <script>
+        $("#toast").hide();
+        function showToast(message) {
+            $("#toast").html("<p class=\"text-black\">" + message + "</p>");
+            // Show the toast
+            $("#toast").toggle(800);
+            setTimeout(function () {
+                $("#toast").toggle(1000);
+            }, 4000);
+        }
+    </script>
+    <!-- SKELETAL SCRIPT -->
+    <script>
+        $(document).ready(function () {
+            $("#navbar").fadeToggle(2000);
+            $("#btnNavbarToggler").click(function () {
+                $("#navmenu").toggle(2000);
+
+            });
+
+
+            $("#navbar").mouseenter(function () {
+                $(this).toggleClass("bg-primary navbar-dark");
+                $("#navbar img").attr("src", "img/lightlogo.jpeg")
+            }).mouseleave(function () {
+                $(this).toggleClass("bg-primary navbar-dark");
+                $("#navbar img").attr("src", "img/darklogo.jpeg")
+            });
+            $("#welcomeToJamRock").show(2000);
+            $(window).scroll(function () {
+                // Calculate the percentage scrolled
+                var scrollPercentage = (($(window).scrollTop() / ($(document).height() - $(window).height())) * 100);
+
+                // Check if the user has scrolled more than 20%
+                if (scrollPercentage > 20) {
+                    $("#navbar").hide(400);
+                } else {
+                    $("#navbar").show(400);
+                };
+                if (scrollPercentage > 4) {
+                };
+                if (scrollPercentage > 40) {
+                    $("#welcomeToJamRock2").show(2000);
+                };
+            });
+        });
+    </script>
+    <!-- Other Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
