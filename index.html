@@ -23,16 +23,6 @@
             right: 5vw;
         }
 
-        body {
-            font-family: "Heading";
-            position: relative;
-            background: url("./img/steak.jpg");
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
         #welcomeToJamRock {
             font-size: 3.5rem;
         }
@@ -50,7 +40,8 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: url("./img/steak.jpg");
+            background: url("./img/truck.jpg");
+            filter: brightness(50%);
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -102,12 +93,52 @@
             max-width: 30vw;
             max-height: 70vh;
         }
+
+        .icons {
+            max-width: 10vw;
+            border: solid white 2px;
+            border-radius: 50%;
+        }
+
+        .icons-oval {
+            max-width: 10vw;
+            border: solid white 2px;
+            border-radius: 10%;
+        }
+
+        .herosCape {
+            font-size: 8em;
+        }
+
+        .becomeSquare {
+            width: 50vw;
+            max-height: 50vh;
+            object-fit: cover;
+        }
+
+        .contactIcons {
+            width: 10vw;
+            height: 10vh;
+            padding: 20px;
+            border: 0;
+            border-top: solid white 0.1px;
+            border-left: solid white 0.2px;
+            border-right: solid white 2.2px;
+            border-bottom: solid white 2px;
+            border-radius: 73% 27% 89% 11% / 23% 92% 8% 77%;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        .clickable {
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg py-3 fixed-top hide">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
         <div class="container">
             <div>
                 <a href="#" class="navbar-brand out-text"><img src="img/darklogo.jpeg" class="img-fluid w-25"
@@ -118,8 +149,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="home.php" class="nav-link out-text">Home</a></li>
-                    <span>Coming soon</span>
+                    <li class="nav-item"><a href="index.html" class="nav-link out-text">Home</a></li>
+                    <li class="nav-item"><a href="book.html" class="nav-link out-text">Book us Now!</a></li>
                     <!-- 
                     <li class="nav-item"><a href="blog.php" class="nav-link out-text">Blog</a></li>
                     <li class="nav-item"><a href="home.php#aboutUs" class="nav-link out-text">About us</a></li>
@@ -134,39 +165,87 @@
     <script>
     </script>
     <!-- HERO -->
-    <div class="container-fluid p-5" id="hero">
+    <div class="container-fluid p-5 align-items-center justify-content-center" id="hero">
+        <div class="row py-4">
+        </div>
+        <div class="row py-4">
+        </div>
+        <div class="row py-4">
+            <div class="col-md-12 text-center">
+                <h1 class="Sign display-one herosCape">
+                    Rack n Grill
+                </h1>
+
+            </div>
+            <div class="row py-5 text-center">
+
+            </div>
+            <div class="row py-5 text-center">
+                <div class="col-md-7">
+                    <h1 class="display-two">
+                        Your one stop food truck.
+                    </h1>
+
+                </div>
+
+            </div>
+            <div class="row py-5 text-center">
+
+            </div>
+            <div class="col-md-11 text-end">
+                <h3>
+                    We use ONLY the most fresh ingredients. ✔️
+                </h3>
+                <h3>
+                    Fast Orders & Delivery! ✔️
+                </h3>
+                <h3>
+                    Long waiting times? ❌
+                </h3>
+            </div>
+        </div>
+
+    </div>
+    <!-- HERO -->
+    <div class="container-fluid p-5">
         <div class="row py-4">
             <div class="col-md-12"></div>
         </div>
         <div class="row py-5 my-5">
             <div id="welcomeToJamRock" class="col-md-6 hide welcomeToJamRock">
                 <h1 class="Sign">Welcome to Rack n Grill! </h1>
-                <img src="img/cc894d197604f99794b312c3be039464_4.jpeg" class="img-fluid" alt="">
+                <img src="img/cc894d197604f99794b312c3be039464_4.jpeg" class="img-fluid becomeSquare" alt="">
 
             </div>
             <div class="col-md-6">
-                <h6> Welcome to Rack ‘n Grill Food Truck,</h6>
+                <h3> Welcome to Rack ‘n Grill Food Truck,</h3>
                 <p class="lead text-center"> your go-to destination for mouth-watering grilled delights on
-                    the streets of Cape Town! At Rack ‘n Grill, we specialize in serving up delicious Grilled dishes that are
+                    the streets of Cape Town! At Rack ‘n Grill, we specialize in serving up delicious Grilled dishes
+                    that are
                     sure to satisfy your cravings.
-                    
-                    <span class="text-highlight">Our food truck</span> is dedicated to providing top-quality, flavourful meals to food lovers of all ages and
-                    backgrounds. Whether you&#39;re a local resident, a tourist exploring the vibrant culinary scene of Cape
+
+                    <span class="text-highlight">Our food truck</span> is dedicated to providing top-quality, flavourful
+                    meals to food lovers of all ages and
+                    backgrounds. Whether you&#39;re a local resident, a tourist exploring the vibrant culinary scene of
+                    Cape
                     Town, or simply someone who appreciates good food, Rack ‘n Grill has something for everyone.
-                    
-                    From legendary Racks of Ribs to juicy Grilled Burgers, Braai Boxes &amp; Platters, our menu is packed
-                    with a variety of options to tantalize your taste buds. We take pride in using fresh, locally sourced
+
+                    From legendary Racks of Ribs to juicy Grilled Burgers, Braai Boxes &amp; Platters, our menu is
+                    packed
+                    with a variety of options to tantalize your taste buds. We take pride in using fresh, locally
+                    sourced
                     ingredients to create our signature dishes, ensuring that every bite is bursting with flavour.
-                    
-                   </p><br><br>
-                <h6>We trade at most international</h6>
-                <p>   &amp; local sports &amp; music events as well catering to all private &amp;
+
+                </p><br><br>
+                <h3>We trade at most international</h3>
+                <p> &amp; local sports &amp; music events as well catering to all private &amp;
                     corporate events. Watch our socials for our next pop up as well.
-                    
-                    Join us at Rack ‘n Grill Food Truck for a culinary experience like no other, where delicious food and
+
+                    Join us at Rack ‘n Grill Food Truck for a culinary experience like no other, where delicious food
+                    and
                     friendly service come together to create unforgettable memories.
-                    
-                    Come hungry, leave happy! #TellYourMommyThem</p>
+
+                    Come hungry, leave happy! <span class="text-highlight">#TellYourMommyThem</span></p>
             </div>
         </div>
     </div>
@@ -202,24 +281,89 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-primary p-5 text-black justify-content-center">
-        <div class="row text-center bg-primary">
-            <div class="col-md-8">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                  </svg>
+
+
+
+    <!-- Our references -->
+
+    <div class="container-fluid bg-primary text-light p-5 text-center">
+        <h1 class="display-one text-black Sign" style="font-size: 4rem;">
+            Some of our clients
+        </h1>
+        <div class="row">
+            <div class="col-md-1">
+                <svg id="prevClient" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                    class="bi bi-arrow-left text-highlight clickable" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+            </div>
+            <div class="col-md-10" id="ouputIcons">
+
+                <img src="icons/Wolksvagen.png" alt="" class="img-fluid icons bg-semihighlight">
+                <img src="icons/Rocking_the_Daisies.png" alt="" class="img-fluid icons bg-semihighlight">
+                <img src="icons/Rmb_logo.jpeg" alt="" class="img-fluid icons bg-semihighlight">
+                <img src="icons/Ultra_South_Africa_Logo.png" alt="" class="img-fluid icons-oval bg-semihighlight">
+                <img src="icons/Accenture.png" alt="" class="img-fluid icons-oval bg-semihighlight">
+                <img src="icons/Capitec.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Bob_Martin_and_Co.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Datacentrix.jpeg" alt="" class="img-fluid icons-oval">
+                <img src="icons/DunLop.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Edf_renewables.jpeg" alt="" class="img-fluid icons-oval">
+                <img src="icons/Entelect.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/FnB.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/GL_events.png" alt="" class="img-fluid icons">
+                <img src="icons/Investec_asset_Management.jpeg" alt="" class="img-fluid icons-oval">
+                <img src="icons/Logicalis_Architects_of_change.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Mercedes_Benz.jpg" alt="" class="img-fluid icons-oval">
+                <img src="icons/Mix_telematics.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Porche.jpeg" alt="" class="img-fluid icons-oval">
+                <img src="icons/Protea_hotels.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Rmb_Long.jpeg" alt="" class="img-fluid icons-oval">
+                <img src="icons/Sage.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Shell.png" alt="" class="img-fluid icons-oval">
+                <img src="icons/Woolworths.png" alt="" class="img-fluid icons-oval">
+
+            </div>
+            <div class="col-md-1">
+                <svg id="nextClient" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                    class="bi bi-arrow-right text-highlight clickable" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
+    </div>
+
+
+    <!-- 
+        Contact us
+     -->
+    <div class="container-fluid bg-dark p-5 text-black justify-content-center">
+        <div class="row text-center">
+            <div class="col-md-8">
+                <a href="mailto:info@rackngrill.co.za">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope contactIcons"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/rackngrill?igsh=am03Y200cG5qanVr">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram contactIcons"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg></a>
+
+                <a href="tel:+27682992749">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-whatsapp contactIcons" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                    </svg></a>
+            </div>
+            <div class="col-md-4 text-start">
                 <span class="neon-text">Food Truck • Dark Kitchen</span><br>
                 <span class="out-text">Entrepreneur</span><br>
                 <span class="neon-text">Est 2015</span><br>
@@ -234,9 +378,7 @@
             </div>
         </div>
     </div>
-
-
-
+    <!-- Fancy stuff -->
     <div id="toast" class="top right success"></div>
     <script>
         $("#toast").hide();
@@ -252,18 +394,84 @@
     <!-- SKELETAL SCRIPT -->
     <script>
         $(document).ready(function () {
-            $("#navbar").fadeToggle(2000);
+            $(".nav-link").toggleClass("text-black");
             $("#btnNavbarToggler").click(function () {
                 $("#navmenu").toggle(2000);
 
             });
 
+            /* Buttons for clients list */
+
+            var currentIndex = 0; // Initial index
+
+            var images = [
+                '<img src="icons/Wolksvagen.png" alt="" class="img-fluid icons bg-semihighlight">',
+                '<img src="icons/Rocking_the_Daisies.png" alt="" class="img-fluid icons bg-semihighlight">',
+                '<img src="icons/Rmb_logo.jpeg" alt="" class="img-fluid icons bg-semihighlight">',
+                '<img src="icons/Ultra_South_Africa_Logo.png" alt="" class="img-fluid icons-oval bg-semihighlight">',
+                '<img src="icons/Accenture.png" alt="" class="img-fluid icons-oval bg-semihighlight">',
+                '<img src="icons/Capitec.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Bob_Martin_and_Co.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Datacentrix.jpeg" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/DunLop.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Edf_renewables.jpeg" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Entelect.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/FnB.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/GL_events.png" alt="" class="img-fluid icons">',
+                '<img src="icons/Investec_asset_Management.jpeg" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Logicalis_Architects_of_change.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Mercedes_Benz.jpg" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Mix_telematics.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Porche.jpeg" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Protea_hotels.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Rmb_Long.jpeg" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Sage.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Shell.png" alt="" class="img-fluid icons-oval">',
+                '<img src="icons/Woolworths.png" alt="" class="img-fluid icons-oval">'
+            ];
+            function replaceOutputIcons(index) {
+                var outputIcons = $('#ouputIcons');
+                outputIcons.empty(); // Clear existing content
+
+                // Ensure index is within bounds
+                if (index >= 0 && index < images.length) {
+                    // Append the specified image and the two following it from the images array
+                    for (var i = index; i < index + 3 && i < images.length; i++) {
+                        outputIcons.append(images[i]);
+                    }
+                }
+            }
+
+            $('#prevClient').click(function () {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = images.length - 3; // Wrap around to the end of the array
+                }
+                replaceOutputIcons(currentIndex);
+            });
+
+            // Function to handle clicking on next client
+            $('#nextClient').click(function () {
+                currentIndex++;
+                if (currentIndex+2 >= images.length) {
+                    currentIndex = 0; // Wrap around to the beginning of the array
+                }
+                replaceOutputIcons(currentIndex);
+            });
+            // Initial call to display the first set of images
+            replaceOutputIcons(currentIndex);
+
+
+            /* END Buttons for clients list */
+
 
             $("#navbar").mouseenter(function () {
-                $(this).toggleClass("bg-primary navbar-dark");
+                $(this).toggleClass("bg-highlight navbar-dark");
                 $("#navbar img").attr("src", "img/lightlogo.jpeg")
+                $(".nav-link").toggleClass("text-black");
+
             }).mouseleave(function () {
-                $(this).toggleClass("bg-primary navbar-dark");
+                $(this).toggleClass("bg-highlight navbar-dark");
                 $("#navbar img").attr("src", "img/darklogo.jpeg")
             });
             $("#welcomeToJamRock").show(2000);
