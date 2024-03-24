@@ -90,8 +90,8 @@
         }
 
         .video {
-            max-width: 30vw;
-            max-height: 70vh;
+            max-width: 100vw;
+            height: 100vh;
         }
 
         .icons {
@@ -104,10 +104,6 @@
             max-width: 10vw;
             border: solid white 2px;
             border-radius: 10%;
-        }
-
-        .herosCape {
-            font-size: 8em;
         }
 
         .becomeSquare {
@@ -141,7 +137,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
         <div class="container">
             <div>
-                <a href="#" class="navbar-brand out-text"><img src="img/darklogo.jpeg" class="img-fluid w-25"
+                <a href="index.html" class="navbar-brand out-text"><img src="img/darklogo.jpeg" class="img-fluid w-25"
                         alt=""></a>
             </div>
             <button id="btnNavbarToggler" class="navbar-toggler" type="button">
@@ -164,15 +160,15 @@
     </nav>
     <script>
     </script>
-    <!-- Form -->
-    <div class="container-fluid p-5 align-items-center justify-content-center text-center align-items-center justify-content-center">
+    <div
+        class="container-fluid py-5 align-items-center justify-content-center text-center align-items-center justify-content-center m-0">
         <div class="row py-4">
         </div>
         <div class="row py-4">
         </div>
         <div class="row py-4">
             <div class="col-md-12 text-center">
-                <h1 class="Sign display-one herosCape">
+                <h1 class="Sign display-1">
                     Rack n Grill
                 </h1>
 
@@ -189,37 +185,39 @@
                 </div>
 
             </div>
-            <div class="row py-5 text-center">
-                <div class="col-md-12 text-end bg-highlight p-5">
-                    <form action="" method="post" class="p-5">
-                        <!-- 1. Date and time input -->
-                        <div data-mdb-input-init class="form-floating mb-4">
-                            <input type="datetime-local" id="date" name="date" class="form-control" placeholder="" />
-                            <label class="form-label text-black" for="date">Date & Time</label>
-                        </div>
-                        <!-- venue input -->
-                        <div data-mdb-input-init class="form-floating mb-4">
-                            <input type="text" id="venue" name="venue" class="form-control" placeholder="" />
-                            <label class="form-label text-black" for="venue">Venue</label>
-                        </div>
-                        <!-- Email input -->
-                        <div data-mdb-input-init class="form-floating mb-4">
-                            <input min="1" type="number" id="amount" name="amount" class="form-control"
-                                placeholder="" />
-                            <label class="form-label text-black" for="amount">Amount of guests</label>
-                        </div>
-                        <button data-mdb-ripple-init type="submit" class="btn btn-highlight btn-block">Book
-                            now!</button>
 
-                    </form>
-                    <h3 class="text-end">
-                        Shukran <br>
-                        Muammer</h3>
-                </div>
+        </div>
+    </div>
+    <!-- Form -->
+    <div class="container-fluid">
+        <div class="row py-5 text-center bg-highlight">
+            <div class="col-md-12 text-end">
+                <form action="" method="post" class="py-5">
+                    <!-- 1. Date and time input -->
+                    <div data-mdb-input-init class="form-floating mb-4">
+                        <input type="datetime-local" id="date" name="date" class="form-control" placeholder="" />
+                        <label class="form-label text-black" for="date">Date & Time</label>
+                    </div>
+                    <!-- venue input -->
+                    <div data-mdb-input-init class="form-floating mb-4">
+                        <input type="text" id="venue" name="venue" class="form-control" placeholder="" />
+                        <label class="form-label text-black" for="venue">Venue</label>
+                    </div>
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-floating mb-4">
+                        <input min="1" type="number" id="amount" name="amount" class="form-control" placeholder="" />
+                        <label class="form-label text-black" for="amount">Amount of guests</label>
+                    </div>
+                    <button data-mdb-ripple-init type="submit" class="btn btn-highlight btn-block">Book
+                        now!</button>
+
+                </form>
+                <h3 class="text-end">
+                    Shukran <br>
+                    Muammer</h3>
             </div>
         </div>
     </div>
-
 
 
     <!-- 
